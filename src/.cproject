@@ -37,10 +37,12 @@
 								<option id="com.atollic.truestudio.common_options.target.interwork.216429195" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork" useByScannerDiscovery="false"/>
 								<option id="com.atollic.truestudio.gcc.symbols.defined.369654924" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="STM32F042"/>
+									<listOptionValue builtIn="false" value="STM32F0"/>
 								</option>
 								<option id="com.atollic.truestudio.gcc.directories.select.2004314594" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;..\..\lib\CMSIS\Include\&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;..\..\lib\CMSIS\Device\ST\STM32F0xx\Include\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\matth\GitHub\libopencm3-master\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\matth\GitHub\stm32-can-bridge\lib\CMSIS\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\matth\GitHub\stm32-can-bridge\lib\CMSIS\Device\ST\STM32F0xx\Include&quot;"/>
 								</option>
 								<option id="com.atollic.truestudio.gcc.warnings.extra.654563501" name="Enable extra warning flags" superClass="com.atollic.truestudio.gcc.warnings.extra" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.atollic.truestudio.gcc.warnings.pedantic.1849567878" name="Issue all warnings demanded by strict ISO C and ISO C++" superClass="com.atollic.truestudio.gcc.warnings.pedantic" useByScannerDiscovery="false" value="true" valueType="boolean"/>
@@ -48,6 +50,7 @@
 								<option id="com.atollic.truestudio.gcc.warnings.missing_include_dirs.533645793" name="Warn if a user-supplied include directory does not exist" superClass="com.atollic.truestudio.gcc.warnings.missing_include_dirs" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.atollic.truestudio.gcc.warnings.w_switch_default.307061795" name="Warn when switch statement does not have a default case" superClass="com.atollic.truestudio.gcc.warnings.w_switch_default" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.atollic.truestudio.gcc.warnings.w_switch_enum.1335061971" name="Warn if switch is used on enum type and switch statement lacks case for some enumerations" superClass="com.atollic.truestudio.gcc.warnings.w_switch_enum" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.exe.debug.toolchain.gcc.optimization.level.640159689" name="Optimization Level" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.optimization.level" useByScannerDiscovery="false" value="com.atollic.truestudio.gcc.optimization.level.00" valueType="enumerated"/>
 								<inputType id="com.atollic.truestudio.gcc.input.438017955" superClass="com.atollic.truestudio.gcc.input"/>
 							</tool>
 							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.337856589" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
@@ -59,6 +62,7 @@
 								<option id="com.atollic.truestudio.common_options.target.interwork.1401456413" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork" useByScannerDiscovery="false"/>
 								<option id="com.atollic.truestudio.ld.general.scriptfile.952642439" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" useByScannerDiscovery="false" value="../STM32F042C6_FLASH.ld" valueType="string"/>
 								<option id="com.atollic.truestudio.ld.misc.linkerflags.571317429" name="Other options" superClass="com.atollic.truestudio.ld.misc.linkerflags" useByScannerDiscovery="false" value="-Wl,-cref,-u,Reset_Handler -v" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.2089429051" superClass="com.atollic.truestudio.ld.optimization.do_garbage" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="com.atollic.truestudio.ld.input.1971555795" name="Input" superClass="com.atollic.truestudio.ld.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -82,7 +86,9 @@
 								<option id="com.atollic.truestudio.ldcc.general.scriptfile.1057736536" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile"/>
 							</tool>
 							<tool id="com.atollic.truestudio.ar.base.1943817708" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
-							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.398467719" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.398467719" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput">
+								<option id="com.atollic.truestudio.secoutput.general.convert.31448760" name="Convert build output" superClass="com.atollic.truestudio.secoutput.general.convert" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							</tool>
 						</toolChain>
 					</folderInfo>
 				</configuration>
@@ -170,5 +176,12 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/src_bridge"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/src_bridge"/>
+		</configuration>
+	</storageModule>
 </cproject>
