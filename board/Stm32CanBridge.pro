@@ -1,4 +1,4 @@
-update=12/15/2016 7:33:28 AM
+update=4/1/2018 4:37:03 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -29,14 +29,15 @@ version=1
 version=1
 LibDir=
 [eeschema/libraries]
-LibName1=power
-LibName2=device
-LibName3=conn
-LibName4=regul
-LibName5=memory
-LibName6=xilinx
-LibName7=microcontrollers
-LibName8=microchip
-LibName9=contrib
-LibName10=stm32
-LibName11=ftdi
+LibName1=Stm32CanBridge-rescue
+LibName2=power
+LibName3=device
+LibName4=conn
+LibName5=regul
+LibName6=memory
+LibName7=xilinx
+LibName8=microcontrollers
+LibName9=microchip
+LibName10=contrib
+LibName11=stm32
+LibName12=ftdi
