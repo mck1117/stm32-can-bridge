@@ -187,4 +187,10 @@
  */
 #define STM32_WDG_USE_IWDG                  FALSE
 
+/*
+ * CAN driver system settings.
+ */
+#define STM32_CAN_USE_CAN1                  TRUE
+#define STM32_CAN_CAN1_IRQ_PRIORITY         3
+
 #endif /* MCUCONF_H */
